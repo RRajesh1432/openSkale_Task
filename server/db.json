@@ -1,0 +1,176 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "name": "Rajesh Ragi",
+      "email": "rajeshragi387@gmail.com",
+      "password": "rajesh@123",
+      "id": "X4ZQ79E1_NQ"
+    }
+  ],
+  "trains": [
+    {
+      "id": "1",
+      "trainNo": "12727",
+      "trainName": "Godavari Express",
+      "source": "Hyderabad",
+      "destination": "Vijayawada",
+      "date": "2026-08-10",
+      "availableSeats": 117,
+      "fare": 450
+    },
+    {
+      "id": "2",
+      "trainNo": "12760",
+      "trainName": "Charminar Express",
+      "source": "Hyderabad",
+      "destination": "Chennai",
+      "date": "2026-08-10",
+      "availableSeats": 79,
+      "fare": 650
+    },
+    {
+      "trainNo": "12101",
+      "trainName": "vijayawada express",
+      "source": "vijayawada",
+      "destination": "Hyderabad",
+      "availableSeats": "50",
+      "fare": "100",
+      "id": "X2-y-fVIDZo"
+    },
+    {
+      "trainNo": "12345",
+      "trainName": "Sathavahana super fast express",
+      "source": "vijayawada",
+      "destination": "Hyderabad",
+      "availableSeats": "120",
+      "fare": "175",
+      "id": "-WjgC7MAI6M"
+    },
+    {
+      "trainNo": "12790",
+      "trainName": "Golkonda Express",
+      "source": "Hyderabad",
+      "destination": "vijayawada",
+      "availableSeats": "120",
+      "fare": "350",
+      "id": "pJJsllKZvN4"
+    }
+  ],
+  "bookings": [
+    {
+      "userId": "X4ZQ79E1_NQ",
+      "trainId": "1",
+      "trainName": "Godavari Express",
+      "passengerName": "rajesh",
+      "age": "22",
+      "gender": "Male",
+      "fare": 450,
+      "status": "Confirmed",
+      "id": "7KelK_jjWOo"
+    },
+    {
+      "userId": "X4ZQ79E1_NQ",
+      "trainId": "1",
+      "trainName": "Godavari Express",
+      "passengerName": "rajesh",
+      "age": "22",
+      "gender": "Male",
+      "fare": 450,
+      "status": "Confirmed",
+      "paymentStatus": "Paid",
+      "transactionId": "TXN683563441",
+      "pnr": 9471105457,
+      "id": "4HX04hF3QTk"
+    },
+    {
+      "userId": "1",
+      "trainId": "2",
+      "trainName": "Charminar Express",
+      "passengerName": "guru",
+      "age": "23",
+      "gender": "Male",
+      "fare": 650,
+      "status": "Confirmed",
+      "paymentStatus": "Paid",
+      "transactionId": "TXN140659688",
+      "pnr": 4720294149,
+      "id": "01dbDkOjSvg"
+    },
+    {
+      "userId": "X4ZQ79E1_NQ",
+      "trainId": "1",
+      "trainName": "Godavari Express",
+      "passengerName": "guru",
+      "age": "12",
+      "gender": "Male",
+      "fare": 450,
+      "status": "Confirmed",
+      "paymentStatus": "Paid",
+      "transactionId": "TXN616278804",
+      "pnr": 4696570056,
+      "id": "tfFyLm8VtHM"
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "userId": 2,
+      "paymentType": "Debit Card",
+      "cardHolder": "Rajesh",
+      "cardNumber": "1234567812345678",
+      "expiry": "2028-10",
+      "cvv": "123"
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "paymentType": "UPI",
+      "upiId": "rajesh@upi"
+    },
+    {
+      "userId": "X4ZQ79E1_NQ",
+      "paymentType": "UPI",
+      "cardHolder": "",
+      "cardNumber": "",
+      "expiry": "",
+      "cvv": "",
+      "upiId": "7988273648@ybi",
+      "id": "SYsnZCdsj7Q"
+    },
+    {
+      "userId": "X4ZQ79E1_NQ",
+      "bookingId": 1785136613358,
+      "amount": 450,
+      "paymentMethod": "UPI",
+      "transactionId": "TXN683563441",
+      "status": "Success",
+      "id": "iwzII79ihUs"
+    },
+    {
+      "userId": "1",
+      "bookingId": 1785138428552,
+      "amount": 650,
+      "paymentMethod": "UPI",
+      "transactionId": "TXN140659688",
+      "status": "Success",
+      "id": "_VI9cs1t5EM"
+    },
+    {
+      "userId": "X4ZQ79E1_NQ",
+      "bookingId": 1785139890241,
+      "amount": 450,
+      "paymentMethod": "UPI",
+      "transactionId": "TXN616278804",
+      "status": "Success",
+      "id": "-afyi5J4EMk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
